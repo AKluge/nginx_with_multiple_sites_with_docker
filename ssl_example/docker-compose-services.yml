@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  
+  nginx:
+    image: nginx:alpine
+    container_name: nginx
+    network_mode: testNet
+ 
+  apache:
+    image: httpd:alpine
+    container_name: apache
+    network_mode: testNet
